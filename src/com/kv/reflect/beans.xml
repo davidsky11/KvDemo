@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" >
+	
+	<bean id="person0" class="com.kv.reflect.Person" 
+		p:name="test" 
+		p:sex="m"
+		p:age="26"
+		p:address="test_addr" />
+	
+	<bean id="person1" class="com.kv.reflect.Person" >
+		<property name="name" value="kv" />
+		<property name="sex" value="m" />
+		<property name="age" value="26" />
+		<property name="address" value="test" />
+ 	</bean>
+ 	
+</beans>
